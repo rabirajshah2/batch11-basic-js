@@ -1,4 +1,4 @@
-const num = 13;
+let num = 21;
 if (num % 7 == 0 && num % 3 == 0) {
   console.log("The given number " + num + " is multiple of 3 and 7");
 } else if (num % 3 == 0) {
