@@ -31,8 +31,17 @@ console.log(genSlug("Hello, I'm Rabi Raj Sah.."));
 
 // Write a js function to generate a proper case for the given name
 // rabi raj prasad sah => Rabi Raj Prasad Sah
-const upCase = (str) =>{
-    str.replaceAll()
-
-}
+const upCase = (str) => {
+  str.replaceAll();
+};
 console.log(upCase("rabi raj prasad sah"));
+
+//write a implicit  function that format the number in the following format.
+// 10000 => 1o,000
+// 1000000 = 1,000,0000
+const numFormatter = (text, type = "en-IN") => {
+  const res = text.toLocaleString("en-IN"); //indian format
+  console.log(res);
+  return res;
+};
+numFormatter(1000000);
