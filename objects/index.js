@@ -92,6 +92,22 @@ newProd.discount = price > 100 ? "10%" : "7%";
 
 console.log(newProd);
 
-const car1={name: "Tesla", model: " cybertruck", year:2024};
-const car2={name: "Tesla", model: " cybertruck", year:2024};
-// write a js function to compare to objects and return the boolean 
+const car1 = { name: "Tesla", model: " cybertruck", year: 2024 };
+const car2 = { name: "Tesla", model: " cybertruck", year: 2024 };
+// write a js function to compare to objects and return the boolean
+
+const compareValue = (obj1, obj2) => {
+  const keys1 = Object.keys(obj1);
+  const keys2 = Object.keys(obj2);
+  if (keys1.length !== keys2.length) {
+    return false;
+  }
+  for (const key of keys1){
+    if(obj1[key] !== obj2[key])
+    {
+      return false;
+    }
+  }
+  return true;
+};
+console.log(compareValue(car1, car2));
